@@ -41,6 +41,9 @@ ul{
     overflow: hidden;
 }
 
+
+
+
 /* PADDING-MARGIN-BORD... */
 
 
@@ -137,6 +140,18 @@ ul{
     padding-bottom: 15px;
 }
 
+.white-txt{
+    color: var(--white);
+}
+
+.upcase{
+    text-transform: uppercase;
+}
+
+.font-sm{
+    font-size: .7rem;
+}
+
 
 
 
@@ -150,6 +165,24 @@ ul{
 .col img{
     width: 100%;
 }
+
+
+
+.round-img{
+    max-width: 230px;
+    max-height: 230px;
+    border-radius: 100%;
+   
+}
+
+
+.round-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+} 
 
 /* CONTAINER */
 
@@ -196,7 +229,6 @@ ul{
     right: 0;
     background-color: var(--navy-blue);
     filter: opacity(0.9);
-    text-align: end;
 }
 
 .content-box{
@@ -224,6 +256,18 @@ ul{
 }
 
 
+
+
+/* BOTTONI */
+
+.btn{
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: 1px solid var(--white);
+
+}
+
+
 /* FLEX */
 
 .d-flex{
@@ -246,22 +290,18 @@ ul{
     justify-content: flex-end;
 }
 
-.aligit-center{
+.alig-center{
     align-items: center;
+    align-content: center;
 
 }
 
 .aligit-start{
-    align-content: flex-start;
+    align-items: flex-start;
 }
 
 .aligcon-start{
     align-content: flex-start;
-}
-
-
-.aligcon-center{
-    align-content: center;
 }
 
 
@@ -270,18 +310,3 @@ ul{
 
 /* PROVEEEE */
 
-.round-img{
-    max-width: 230px;
-    max-height: 230px;
-    border-radius: 100%;
-   
-}
-
-
-.round-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-
-} 
