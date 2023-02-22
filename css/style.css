@@ -152,6 +152,24 @@ ul{
     font-size: .7rem;
 }
 
+.tools ul li a{
+   font-size: .7rem;
+   text-decoration: none;
+   color: var(--light-grey);
+   
+}
+
+
+#playlist ul li{
+    padding: 10px 0;
+}
+
+
+#playlist ul li a{
+    text-decoration: none;
+    color: var(--light-grey);
+    font-size: .8rem;
+}
 
 
 
@@ -183,6 +201,13 @@ ul{
     object-position: center;
 
 } 
+
+
+.tools ul li img{
+    width: 10%;
+
+}
+
 
 /* CONTAINER */
 
@@ -274,6 +299,12 @@ ul{
     display: flex;
 }
 
+
+.d-flex-col{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
 .justco-spacebtw{
     justify-content: space-between;
 }
@@ -304,9 +335,33 @@ ul{
     align-content: flex-start;
 }
 
-
+.aligco-sbtw{
+    align-content:space-between ;
+}
 
 
 
 /* PROVEEEE */
+.sideb-top{
+    overflow: auto;
 
+}
+
+
+.sideb-bot{
+    position: fixed;
+    bottom: 70px;
+    left: 0;
+
+}
+
+
+.sideb-bot a{
+ 
+}
+
+
+.ico-sz{
+    width: 5%;
+
+}

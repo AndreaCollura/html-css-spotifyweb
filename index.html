@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <title>**icona** Spotify</title>
 </head>
+
 <body>
     <div class="wrapper debug">
         <main class="d-flex">
@@ -18,16 +22,16 @@
                 <div class="logo">
                     <img src="./img/logo.svg" alt="logo">
                 </div>
-                <div class="tools">
+                <div class="tools p-t20 p-b20">
                     <ul>
-                        <li>**icona** Home</li>
-                        <li>**icona** Cerca</li>
-                        <li>**icona** La tua libreria</li>
+                        <li><a href=""><img src="./img/home.svg" alt=""> Home</a></li>
+                        <li><a href=""><img src="./img/search.svg" alt=""> Cerca</a></li>
+                        <li><a href=""><img src="./img/libreria.svg" alt=""> La tua libreria</a></li>
                     </ul>
                 </div>
-                <div class="playlist">
+                <div id="playlist" class="d-flex-col">
                     <div class="sideb-top">
-                        <h3>playlist</h3>
+                        <h5 class="upcase white-txt">playlist</h5>
                         <ul>
                             <li><a href="">**plus btn** Crea Playlist</a></li>
                             <li><a href="">Nome Playlist</a></li>
@@ -39,14 +43,14 @@
                             <li><a href="">Nome Playlist</a></li>
                         </ul>
                     </div>
-                    <div class="sideb-bot">
-                        <p>**icona** installa app</p>
-                        <h2>**icona** John Doe</h2>
-                    </div>    
+                    <div class="sideb-bot d-flex-col">
+                            <a href=""><img class="ico-sz" src="./img/download.svg" alt="">installa app</a> 
+                            <a href=""><img class="ico-sz" src="./img/profile.svg" alt="">John Doe</a>
+                    </div>
                 </div>
             </div>
 
-                <!-- MAIN FINITO MANCANO EFFETTI HOVER SU NAV BAR E IMG -->
+            <!-- MAIN FINITO MANCANO EFFETTI HOVER SU NAV BAR E IMG -->
 
 
             <div class="main-container debug">
@@ -129,10 +133,6 @@
                             </div>
                     </section>
 
-
-                    <!-- IMG DA ARROTONDARE -->
-
-
                     <section id="popular" class="content p-t20 ">
                         <h2 class="p-b10">Artisti piú popolari</h2>
                         <p>Piú ascolti, piú accurati saranno i suggerimenti</p>
@@ -151,21 +151,17 @@
                             </div>
                     </section>
                 </div>
-                
-                
-                
-                
-                
             </div>
-                
-                 
-                
-            
-            
+
+
+            <!-- PLAY BAR -->
+
+
             <div class="play-bar debug">play-bar</div>
         </main>
 
     </div>
-    
+
 </body>
+
 </html>
