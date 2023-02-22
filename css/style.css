@@ -1,0 +1,46 @@
+/* GENERAL */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+
+    --green: #aaf935;
+    --black:  #000000;
+    --navy-blue: #080b12;
+    --gray: #141922;
+    --mid-gray: #282828;
+    --light-gray: #a3a3a3;
+
+} 
+
+/* UTILITY */
+
+.debug{
+    border: 1px solid red;
+}
+
+/* PADDING-MARGIN-BORD... */
+
+/* TEXT */
+
+/* CONTAINER */
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* FLEX */
+
+
+
+
+
+
