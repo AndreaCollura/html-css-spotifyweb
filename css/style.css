@@ -44,6 +44,10 @@ ul{
 /* PADDING-MARGIN-BORD... */
 
 
+.p-b10{
+    padding-bottom: 10px;
+}
+
 .p-t20{
     padding-top: 20px;
 
@@ -122,14 +126,18 @@ ul{
     font-weight: 600;
 }
 
-#recent h4, #recent p{
+#recent h4, #recent p, #foryou .row h4, #foryou .row p, #popular .row h4, #popular .row p{
     text-align: center;
     padding-top: 8px;
 }
 
-#recent p{
+#recent p, #foryou p, #popular p{
     color: var(--light-grey);
+    font-size: .8rem;
+    padding-bottom: 15px;
 }
+
+
 
 
 /* IMG */
@@ -167,6 +175,7 @@ ul{
     background-color: var(--grey);
     padding-top: 80px;
     padding-left: 230px;
+    margin-bottom: 70px;
     
 }
 
@@ -261,10 +270,10 @@ ul{
 
 /* PROVEEEE */
 
-/* .round-img{
-    width: 200px;
-    height: 200px;
-    object-position: center;
+.round-img{
+    max-width: 230px;
+    max-height: 230px;
+    border-radius: 100%;
    
 }
 
@@ -275,4 +284,4 @@ ul{
     object-fit: cover;
     object-position: center;
 
-} */
+} 
