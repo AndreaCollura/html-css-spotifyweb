@@ -228,7 +228,8 @@ ul{
 }
 
 
-#playlist a:hover{
+#playlist a:hover,
+#playlist a.active{
     color: var(--white);
     border-left: 2px solid var(--green);
     margin-left: -10px;
@@ -284,6 +285,69 @@ ul{
     line-height: .2rem;
     
 }
+
+
+.layer{
+    position: relative;
+    cursor: pointer;
+
+}
+
+.layer:after{
+    font-family: 'font awesome 6 free';
+    font-size: 3rem;
+    content: "\f144";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    color: var(--white);
+    background-color: #2828289c;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+
+}
+
+.layer:hover:after{
+    opacity: 1;
+}
+
+
+.layer-round{
+    position: relative;
+    cursor: pointer;
+    
+}
+
+.layer-round:after{
+    font-family: 'font awesome 6 free';
+    font-size: 3rem;
+    content: "\f144";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    color: var(--white);
+    background-color: #2828289c;
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+
+}
+.layer-round:hover:after{
+    opacity: 1;
+}
+
+
 
 
 
@@ -402,7 +466,20 @@ main{
 
 
 
+#m-nav ul li:after{
+    content: '';
+    display: block;
+    width: 50%;
+    height: 2px;
+    margin: 0 auto;
+    background-color: transparent;
+}
 
+
+#m-nav ul li:hover:after,
+#m-nav ul li.active:after{
+    background-color: var(--green);
+}
 
 
 
@@ -648,6 +725,28 @@ input[type="range"] {
   input[type="range"]::-ms-thumb:hover {
     opacity: 1;
   }
+
+
+  input[type=range]::-webkit-slider-runnable-track  {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
+  
+  input[type=range]::-moz-range-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
+  
+  input[type="range"]::-ms-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
   
   /* barra input volume */
 
@@ -690,4 +789,27 @@ input[type="range"] {
   
   input[type="volume"]::-ms-thumb:hover {
     opacity: 1;
+  }
+
+
+
+  input[type=volume]::-webkit-slider-runnable-track  {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
+  
+  input[type=volume]::-moz-range-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
+  
+  input[type="volume"]::-ms-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
   }
