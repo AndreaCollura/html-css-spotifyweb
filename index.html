@@ -31,9 +31,9 @@
                                 </ul>
                             </div>
                             <div class="playlist-box p-t20">
-                                <h5 class="upcase white-txt">playlist</h5>
+                                <h5 class="upcase white-txt p-l10">playlist</h5>
                                 <ul>
-                                    <li><a href="">**plus btn** Crea Playlist</a></li>
+                                    <li><a href=""> <span><i class="fa-solid fa-plus"></i></span> Crea Playlist</a></li>
                                     <li><a href="">Nome Playlist</a></li>
                                     <li><a href="">Nome Playlist</a></li>
                                     <li><a href="">Nome Playlist</a></li>
@@ -49,7 +49,7 @@
                                 <a class="d-flex alig-center" href=""><img class="ico-sz" src="./img/download.svg" alt=""><span class="light-grey-txt small-txt">installa app</span></a>
                             </div>
                             <div class="d-flex account ">
-                                <a class="d-flex alig-center sbb-border" href=""><img class="ico-sz" src="./img/profile.svg" alt=""><span class="fw-600">John Doe</span></a>
+                                <a class="d-flex alig-center sbb-border" href=""><img class="ico-sz pro-ball" src="./img/profile.svg" alt=""><span class="fw-600">John Doe</span></a>
                             </div>
                         </div>
                     
@@ -165,10 +165,50 @@
 
 
         </main>
-        <div class="play-bar debug">
-            <div class="play-current"></div>
-            <div class="player-media"></div>
-            <div class="player-options"></div>
+        <div class="play-bar d-flex justco-spacebtw debug">
+            <div class="play-current d-flex alig-center debug">
+                <div class="lil-albm d-flex">
+                    <img src="./img/sinister.jpeg" alt="">
+                    <div class="d-flex alig-center">
+                       <div class="lil-albm-txt p-l10"> 
+                            <h4 class="">Sinister</h4>
+                           <span class=" ">Brano Nome</span>
+                       </div>  
+                    </div>
+                    <div class="lil-albm-opt d-flex alig-center justco-end">
+                        <a href=""><i class="fa-regular fa-heart"></i></a>
+                        <a href=""><i class="fa-regular fa-folder"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="player-media">
+                <div class="play-media-t">
+                    <div class="media-btn-bar d-flex justco-spacebtw alig-center ">
+                        <a href=""><i class="fa-solid fa-shuffle"></i></a>
+                        <a href=""><i class="fa-solid fa-backward-step"></i></a>
+                        <a href=""><i class="fa-regular fa-circle-play"></i></a>
+                        <a href=""><i class="fa-solid fa-forward-step"></i></a>
+                        <a href=""><i class="fa-solid fa-rotate-right"></i></a>
+                    </div>
+
+                </div>
+                <div class="play-media-b m-0a">
+                    <div class="d-flex justco-center">
+                        <span>0:25</span>
+                        <input type="range" value="40" min="0" max="100" id="range" oninput="rangenumber.value=value"/>
+                        <span>4:33</span>
+                    </div>
+                </div>
+            </div>
+            <div class="player-options debug">
+                <div class="play-options p-t20 d-flex justco-spacebtw">
+                    <a href=""><i class="fa-solid fa-bars"></i></a>
+                    <a href=""><i class="fa-solid fa-desktop"></i></a>
+                    <a href=""><i class="fa-solid fa-volume-high"></i></a>
+                    <input type="volume" value="0" min="0" max="100" id="range" oninput="rangenumber.value=value"/>
+
+                </div>
+            </div>
 
         </div>
 
