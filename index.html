@@ -25,12 +25,12 @@
                             </div>
                             <div class="tools">
                                 <ul>
-                                    <li><a href=""><img src="./img/home.svg" alt=""><span>Home</span> </a></li>
-                                    <li><a href=""><img src="./img/search.svg" alt=""><span>Cerca</span> </a></li>
-                                    <li><a href=""><img src="./img/libreria.svg" alt=""> <span> La tua libreria</span></a></li>
+                                    <li><a class="d-flex alig-center" href=""><img src="./img/home.svg" alt=""><span>Home</span> </a></li>
+                                    <li><a class="d-flex alig-center" href=""><img src="./img/search.svg" alt=""><span>Cerca</span> </a></li>
+                                    <li><a class="d-flex alig-center" href=""><img src="./img/libreria.svg" alt=""> <span> La tua libreria</span></a></li>
                                 </ul>
                             </div>
-                            <div class="playlist p-t20">
+                            <div class="playlist-box p-t20">
                                 <h5 class="upcase white-txt">playlist</h5>
                                 <ul>
                                     <li><a href="">**plus btn** Crea Playlist</a></li>
@@ -45,8 +45,12 @@
                             </div>
                         </div>
                         <div class="sideb-bot d-flex-col debug">
-                            <a href=""><img class="ico-sz" src="./img/download.svg" alt="">installa app</a>
-                            <a href=""><img class="ico-sz" src="./img/profile.svg" alt="">John Doe</a>
+                            <div class="d-flex install">
+                                <a class="d-flex alig-center" href=""><img class="ico-sz" src="./img/download.svg" alt=""><span class="light-grey-txt small-txt">installa app</span></a>
+                            </div>
+                            <div class="d-flex account ">
+                                <a class="d-flex alig-center sbb-border" href=""><img class="ico-sz" src="./img/profile.svg" alt=""><span class="fw-600">John Doe</span></a>
+                            </div>
                         </div>
                     
                 
@@ -161,7 +165,12 @@
 
 
         </main>
-        <div class="play-bar debug">play-bar</div>
+        <div class="play-bar debug">
+            <div class="play-current"></div>
+            <div class="player-media"></div>
+            <div class="player-options"></div>
+
+        </div>
 
     </div>
 
