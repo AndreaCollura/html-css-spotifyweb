@@ -605,12 +605,13 @@ main {
 .play-media-t {
     width: 100%;
     height: calc(100% / 2);
+    padding-top: 8px;
 }
 
 .play-media-b {
     max-width: 100%;
     height: calc(100% / 2);
-    margin-top: 10px;
+   
 
 }
 
