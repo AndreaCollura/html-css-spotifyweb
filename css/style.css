@@ -18,7 +18,7 @@
     --light-grey: #a3a3a3;
     --white: #ffffff;
 
-} 
+}
 
 
 body{
@@ -72,7 +72,7 @@ ul{
 
 .p-bneg30{
     margin-bottom: -25px;
-    
+
 
 }
 
@@ -170,7 +170,7 @@ ul{
    font-size: .7rem;
    text-decoration: none;
    color: var(--light-grey);
-   
+
 }
 
 #playlist .playlist-box ul li{
@@ -223,7 +223,7 @@ ul{
 
 
 #playlist a{
-    
+
     border-left: 2px solid transparent;
 }
 
@@ -234,7 +234,7 @@ ul{
     border-left: 2px solid var(--green);
     margin-left: -10px;
     padding-left: 10px;
-   
+
 
 }
 #playlist a:hover i{
@@ -255,7 +255,7 @@ ul{
 .lil-albm h4{
     font-size: .7rem;
 }
- 
+
 
 .lil-albm span{
     font-size: .5rem;
@@ -283,7 +283,7 @@ ul{
     color: var(--light-grey);
     margin-right: 30px;
     line-height: .2rem;
-    
+
 }
 
 
@@ -320,7 +320,7 @@ ul{
 .layer-round{
     position: relative;
     cursor: pointer;
-    
+
 }
 
 .layer-round:after{
@@ -367,7 +367,7 @@ ul{
 .round-img img{
    border-radius: 50%;
 
-} 
+}
 
 
 
@@ -387,8 +387,20 @@ ul{
 
 .account a img{
     width: 10% ;
-    
+
 }
+
+.ico-sz{
+    width: 20px;
+
+}
+
+
+.small-logo{
+    display: none;
+
+}
+
 
 
 /* CONTAINER */
@@ -397,8 +409,8 @@ main{
     width: 100%;
     height: calc(100% - 70px);
     overflow: hidden;
-    
-    
+
+
 
 
 }
@@ -413,10 +425,10 @@ main{
 
 .side-bar{
     width: 230px;
-    min-height: 50%;
+    min-height: 480px;
     background-color: var(--black);
     color: var(--light-grey);
-    
+
 }
 
 .main-container{
@@ -426,14 +438,14 @@ main{
     padding-top: 80px;
     margin-bottom: 70px;
     overflow-y: auto;
-    
+
 }
 
 .play-bar{
     width: 100%;
     height: 70px;
     background-color: var(--mid-grey);
-    
+
 }
 
 .cta-bar{
@@ -451,12 +463,12 @@ main{
     height: calc(100% - 70px);
     padding: 15px;
     margin-bottom: 70px;
-    
+
 }
 
 .main-nav{
 
-    max-width:600px ;
+    max-width:600px;
 
 }
 
@@ -505,7 +517,7 @@ main{
     width: 100%;
     height: 70px;
     background-color: var(--black);
-    position: relative;
+    /* position: relative; */
 
 }
 
@@ -524,7 +536,7 @@ main{
     padding: 5px;
     background-color: var(--light-grey);
     margin-right: 5px;
-    
+
 }
 
 
@@ -626,7 +638,8 @@ main{
 
 .d-flex{
     display: flex;
-    
+    flex-flow: row nowrap;
+
 }
 
 
@@ -670,19 +683,8 @@ main{
 
 
 
-/* PROVEEEE */
 
 
-
-
-
-
-
-
-.ico-sz{
-    width: 20px;
-
-}
 
 /* barra input */
 
@@ -697,7 +699,7 @@ input[type="range"] {
     background-image: linear-gradient(#aaaaaa, #aaaaaa);
     background-size: 70% 100%;
     background-repeat: no-repeat;
-    
+
   }
 
   input[type="range"]::-webkit-slider-thumb {
@@ -717,11 +719,11 @@ input[type="range"] {
   input[type="range"]::-webkit-slider-thumb:hover {
     opacity: 1;
   }
-  
+
   input[type="range"]::-moz-range-thumb:hover {
     opacity: 1;
   }
-  
+
   input[type="range"]::-ms-thumb:hover {
     opacity: 1;
   }
@@ -733,21 +735,21 @@ input[type="range"] {
     border: none;
     background: transparent;
   }
-  
+
   input[type=range]::-moz-range-track {
     -webkit-appearance: none;
     box-shadow: none;
     border: none;
     background: transparent;
   }
-  
+
   input[type="range"]::-ms-track {
     -webkit-appearance: none;
     box-shadow: none;
     border: none;
     background: transparent;
   }
-  
+
   /* barra input volume */
 
   input[type="volume"] {
@@ -762,7 +764,7 @@ input[type="range"] {
     background-image: linear-gradient(#aaaaaa, #aaaaaa);
     background-size: 70% 100%;
     background-repeat: no-repeat;
-    
+
   }
 
   input[type="volume"]::-webkit-slider-thumb {
@@ -782,11 +784,11 @@ input[type="range"] {
   input[type="volume"]::-webkit-slider-thumb:hover {
     opacity: 1;
   }
-  
+
   input[type="volume"]::-moz-range-thumb:hover {
     opacity: 1;
   }
-  
+
   input[type="volume"]::-ms-thumb:hover {
     opacity: 1;
   }
@@ -799,17 +801,169 @@ input[type="range"] {
     border: none;
     background: transparent;
   }
-  
+
   input[type=volume]::-moz-range-track {
     -webkit-appearance: none;
     box-shadow: none;
     border: none;
     background: transparent;
   }
-  
+
   input[type="volume"]::-ms-track {
     -webkit-appearance: none;
     box-shadow: none;
     border: none;
     background: transparent;
+  }
+
+
+  @media screen and (max-width: 1200px){
+
+    .row{
+        width: calc(1200 - 230px);
+        flex-flow: row wrap;
+    }
+
+    .col{
+        padding: 15px;
+        width: calc(100% / 4);
+    }
+
+
+  }
+
+
+  @media screen and (max-width: 992px){
+    .row{
+        width: calc(1200 - 230px);
+        flex-flow: row wrap;
+    }
+
+    .col{
+        padding: 15px;
+        width: calc(100% / 3);
+    }
+
+
+  }
+
+
+  @media screen and (max-width:768px){
+    .row{
+        width: calc(1200 - 230px);
+        flex-flow: row wrap;
+    }
+
+    .col{
+        padding: 15px;
+        width: calc(100% / 2);
+    }
+
+    #m-nav ul li{
+       margin-bottom: 40px;
+    }
+
+    .wrap-mq{
+        flex-flow: row wrap;
+        justify-content: space-around;
+        
+        
+    }
+
+
+
+
+  }
+
+  @media screen and (max-width:575px){
+
+    .main-container{
+        width:calc(100% - 50px);
+        height: 100%;
+        background-color: var(--grey);
+        padding-top: 80px;
+        margin-bottom: 70px;
+        overflow-y: auto;
+
+    }
+
+
+
+    .row{
+        max-width: 100%;
+        flex-flow: row wrap;
+    }
+
+    .col{
+        padding: 15px;
+        width: calc(100% / 2);
+    }
+
+    .side-bar{
+
+        width: 50px;
+        min-height: 480px;
+        background-color: var(--black);
+        color: var(--light-grey);
+
+    }
+
+    .small-logo{
+        display: inline-block;
+        width: 20px;
+        margin: 4px 13px;
+    }
+
+    .logo{
+
+        display: none;
+    }
+
+    .tools ul li a span{
+        display: none;
+    }
+
+    .playlist-box{
+        display: none;
+    }
+
+    .sideb-bot .install a span, .sideb-bot .account a span {
+        display: none;
+
+    }
+
+    .ico-sz{
+        width: 20px;
+        margin-left: 4px;
+
+    }
+
+    .pro-ball{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: var(--light-grey);
+        color: #000000;
+        margin-left: -4px;
+    }
+
+    .account a img{
+        width: 30px ;
+        object-fit: cover;
+        object-position: center;
+
+    }
+
+    .cta-bar{
+        width: calc(100% - 50px);
+        height: 80px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: var(--navy-blue);
+        filter: opacity(0.9);
+    }
+
+
+
   }
